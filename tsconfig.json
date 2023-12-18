@@ -18,13 +18,13 @@
     "target": "es5",
     "lib": ["ES2015"],
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "api",
     "baseUrl": ".", // プロジェクトのルートディレクトリ
     "paths": {
-      "@utils/*": ["src/utils/*"], // utilsディレクトリへのエイリアス
-      "@/*": ["src/*"] // srcディレクトリへのエイリアス
+      "@utils/*": ["api/utils/*"], // utilsディレクトリへのエイリアス
+      "@/*": ["api/*"] // srcディレクトリへのエイリアス
     }
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["api"]
 }
