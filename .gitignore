@@ -1,2 +1,6 @@
 node_modules
 dist
+api/index.js
+api/index.d.ts.map
+api/index.d.js
+api/index.d.ts
