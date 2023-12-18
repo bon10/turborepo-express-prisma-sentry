@@ -17,7 +17,7 @@
     "strict": true,
     "target": "es5",
     "lib": ["ES2015"],
-    //"outDir": "./dist",
+    "outDir": "./api/dist",
     "rootDir": "api",
     "baseUrl": ".", // プロジェクトのルートディレクトリ
     "paths": {
