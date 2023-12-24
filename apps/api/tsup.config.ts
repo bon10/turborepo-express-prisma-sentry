@@ -1,8 +1,21 @@
-import { defineConfig, type Options } from "tsup";
+import { defineConfig } from "tsup";
 
-export default defineConfig((options: Options) => ({
-  entryPoints: ["src/index.ts"],
+export default defineConfig({
+  entry: ["src/index.ts"],
+  noExternal: ["@repo"],
+  splitting: false,
+  bundle: true,
+  outDir: "./dist",
   clean: true,
-  format: ["cjs"],
-  ...options,
-}));
+  env: { IS_SERVER_BUILD: "true" },
+  loader: { ".json": "copy" },
+  minify: true,
+  sourcemap: true,
+  dts: {
+    entry: "src/index.ts",
+    resolve: true,
+    compilerOptions: {
+      moduleResolution: "node",
+    },
+  },
+});

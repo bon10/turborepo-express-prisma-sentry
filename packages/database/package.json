@@ -2,8 +2,9 @@
   "name": "@repo/database",
   "version": "0.0.0",
   "description": "prisma package",
+  "private": true,
   "exports": {
-    ".": "./src/client.ts"
+    ".": "./src/index.ts"
   },
   "scripts": {
     "db:migrate:deploy": "prisma migrate deploy",
@@ -25,6 +26,7 @@
     "@types/node": "^20.10.5",
     "eslint": "^8.56.0",
     "prisma": "^5.7.1",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
