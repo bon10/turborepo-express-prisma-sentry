@@ -2,9 +2,15 @@
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
     "lib": ["ES2015"],
-    "module": "commonjs",
-    "outDir": "./api"
+    "outDir": "./api",
+    "rootDir": "./api",
+    "baseUrl": ".", // プロジェクトのルートディレクトリ
+    "paths": {
+      "@database/*": ["../../packages/database/*"],
+      "@/*": ["api/*"]
+    },
+    "noImplicitAny": false
   },
   "exclude": ["node_modules"],
-  "include": ["api/*"]
+  "include": ["api"]
 }

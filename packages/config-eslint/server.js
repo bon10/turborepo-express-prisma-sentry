@@ -39,7 +39,7 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ["node_modules/", "dist/"],
+  ignorePatterns: ["node_modules/", "dist/", "*.js"],
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
