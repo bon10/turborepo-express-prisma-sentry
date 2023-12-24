@@ -6,13 +6,12 @@ export default defineConfig({
   splitting: false,
   bundle: true,
   outDir: "./api",
-  clean: true,
   env: { IS_SERVER_BUILD: "true" },
   loader: { ".json": "copy" },
   minify: true,
   sourcemap: true,
   dts: {
-    entry: "src/index.ts",
+    entry: "api/index.ts",
     resolve: true,
     compilerOptions: {
       moduleResolution: "node",
