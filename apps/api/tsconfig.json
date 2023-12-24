@@ -12,5 +12,5 @@
     "noImplicitAny": false
   },
   "exclude": ["node_modules"],
-  "include": ["api"]
+  "include": ["api/**/*"]
 }
