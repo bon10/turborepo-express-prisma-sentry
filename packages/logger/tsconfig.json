@@ -3,8 +3,7 @@
   "compilerOptions": {
     "lib": ["ES2015"],
     "outDir": "./dist",
-    "types": ["jest", "node"],
-    "moduleResolution": "Bundler"
+    "types": ["jest", "node"]
   },
   "include": ["."],
   "exclude": ["node_modules", "dist"]

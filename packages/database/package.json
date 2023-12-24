@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "prisma package",
   "private": true,
-  "exports": {
-    ".": "./src/index.ts"
-  },
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",

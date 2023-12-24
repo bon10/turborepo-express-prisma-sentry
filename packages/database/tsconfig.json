@@ -1,8 +1,10 @@
 {
   "extends": "@repo/typescript-config/base.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tsup.config.ts"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
-    "moduleResolution": "Bundler"
-  }
+    "lib": ["ES2015"],
+    "outDir": "./dist",
+    "types": ["jest", "node"]
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
 }
