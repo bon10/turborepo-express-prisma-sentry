@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: ["api/index.ts"],
   noExternal: ["@repo"],
   splitting: false,
   bundle: true,
