@@ -1,18 +1,18 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: ["api/index.ts"],
   noExternal: ["@repo"],
   splitting: false,
   bundle: true,
-  outDir: "./api",
-  clean: true,
+  clean: false,
   env: { IS_SERVER_BUILD: "true" },
   loader: { ".json": "copy" },
   minify: true,
   sourcemap: true,
+  outDir: "api",
   dts: {
-    entry: "src/index.ts",
+    entry: "api/index.ts",
     resolve: true,
     compilerOptions: {
       moduleResolution: "node",
