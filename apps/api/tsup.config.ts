@@ -5,7 +5,7 @@ export default defineConfig({
   noExternal: ["@repo"],
   splitting: false,
   bundle: true,
-  outDir: "./dist",
+  outDir: "./api",
   clean: true,
   env: { IS_SERVER_BUILD: "true" },
   loader: { ".json": "copy" },

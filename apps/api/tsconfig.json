@@ -3,7 +3,7 @@
   "compilerOptions": {
     "lib": ["ES2015"],
     "module": "commonjs",
-    "outDir": "./dist"
+    "outDir": "./api"
   },
   "exclude": ["node_modules"],
   "include": ["."]
