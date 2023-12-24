@@ -6,5 +6,5 @@
     "outDir": "./api"
   },
   "exclude": ["node_modules"],
-  "include": ["."]
+  "include": ["api/*"]
 }
