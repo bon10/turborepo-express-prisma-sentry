@@ -6,11 +6,13 @@
     "rootDir": "./api",
     "baseUrl": ".", // プロジェクトのルートディレクトリ
     "paths": {
-      "@database/*": ["../../packages/database/*"],
+      //"@repo/database/*": ["../../packages/database/src/*"],
+      //"@repo/logger/*": ["../../packages/logger/src/*"],
       "@/*": ["api/*"]
     },
+    "moduleResolution": "Bundler",
     "noImplicitAny": false
   },
   "exclude": ["node_modules"],
-  "include": ["api"]
+  "include": ["./api/**/*"]
 }

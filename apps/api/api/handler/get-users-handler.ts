@@ -1,4 +1,4 @@
-import { prisma } from "@repo/database";
+import { prisma } from "@repo/database/src";
 import type { Request, Response } from "express";
 
 export const getUsersHandler = async (
