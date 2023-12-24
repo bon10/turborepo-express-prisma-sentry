@@ -2,7 +2,6 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
-    "outDir": "./dist",
     "composite": false,
     "declaration": true,
     "declarationMap": true,
@@ -20,12 +19,8 @@
     "lib": ["ES2015"],
     //"outDir": "dist",
     "rootDir": ".",
-    "baseUrl": ".", // プロジェクトのルートディレクトリ
-    "paths": {
-      "@utils/*": ["api/utils/*"], // utilsディレクトリへのエイリアス
-      "@/*": ["api/*"] // srcディレクトリへのエイリアス
-    }
+    "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["./*"]
+  "include": ["./*", "api/index.ts"]
 }
