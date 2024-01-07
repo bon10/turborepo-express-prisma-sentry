@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["api/index.ts"],
-  noExternal: ["@repo"],
+  //noExternal: ["@repo"],
   splitting: false,
   bundle: true,
   outDir: "./api",
